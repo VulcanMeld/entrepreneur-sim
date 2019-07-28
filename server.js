@@ -1,9 +1,14 @@
 const express = require('express')
 const app = express()
+const loginRouter = require('./login')
 
 app.use(express.static('public'))
 
+app.use('/login',loginRouter)
+
 let server;
+
+
 
 
 
