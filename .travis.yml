@@ -1,0 +1,9 @@
+language: node_js
+node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: mKKXv9U8M5OqlKTaqm7wKRWkoARo1Qpj+Hv1VyvWzroUXHQrKSSnk6dj0GFpOg4vxyZEkHoaBvOFnvIw/lp1+coZVe7Bo3khlYw0gId4upJEKlwV6crny1n1A9x01kVXnhFefCkXQXdiBbjoBkWT/07CvU8D+b3Oz/FzXgMiCT+nSQvxZmjkizYwXewBsWzXsxC8VrhfRRugxkDSNbi0biwt4D327lMqPZKo/uYzjvIN/WnY+oK6QUT5dbi3AB7Cc3VafhUjyw8WSrngtHvgJne0yFyuZFL+AxLaBsfyrOAddGUCYbdpb8o41vbLiA30Dwfe5xYM3vucFJ/kAy1cn1bLbaM9RdjgXlfLVH7bX5inl0GsBKKUPxcjIdDost1lFSNl5Ew52goQ0CAwG0QvZiGs+jDXonfy2UQGIZUcDsb7AVzjsKBjY8sCtv+HZNIoN0zDYGOKsHW3hgytyqqRM+zJZasrF4x9oGPWzQPxGpIxw1d1vRpWNNYXyb4G/QcwSuY2KdqAGe71j5FDWK8FPkRqbWas3vn/VrASULgCQHUSJ0UrdtaviWVDXKefDyqzxYEhe6qnGSA+YuXyOhEAadeijiP5fHBJiRtmfhRCfeG8T+F9cBTEnoTfLkbf4NrfBg+sxUw13ceYyn+u7N1hPkM+dWRDSABgGKiEOvd2P4o=
+  app: secret-beyond-60924
+  on:
+    repo: VulcanMeld/entrepreneur-sim
