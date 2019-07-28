@@ -1,10 +1,19 @@
 const express = require('express')
 const app = express()
 const loginRouter = require('./login')
+const accountRouter = require('./account')
+const companyRouter = require('./company')
+const inventoryRouter = require('./inventory')
+const shoppingRouter = require('./shopping')
 
 app.use(express.static('public'))
 
 app.use('/login',loginRouter)
+app.use('/account',accountRouter)
+app.use('/company',companyRouter)
+app.use('/inventory',inventoryRouter)
+app.use('/shopping',shoppingRouter)
+
 
 let server;
 
