@@ -12,7 +12,9 @@ let emailSettings = {
 
 }
 
-let profileInfo = {
+let profileSettings = {
+    "name":"Christopher",
+    "image":"smiley.jpg"
     
 }
 
@@ -86,6 +88,34 @@ const displayEmailSettings = (data) => {
 
 }
 
+const handleProfileSettings = (callBackFn) => {
+    let profileSettingsShown = false;
+
+
+    $('.js-profile-link').on('click', function(event){
+        event.preventDefault()
+        if(profileSettingsShown == false) {
+
+            callBackFn(profileSettings)
+            profileSettingsShown = true;
+            
+        }
+
+        else{
+            $('.js-profile-section').empty()
+            profileSettingsShown = false;
+        }
+        
+    })
+
+}
+
+const displayProfile = (data) => {
+    $('.js-profile-section').append(`<p>Your Name is: ${data.name}<button>Change Name</button></p>
+    <p>Profile Image: <img src = ${data.image} height = 30 width =30 ><button>Change Image</button></p>`)
+
+}
+
 
 
 
@@ -98,6 +128,7 @@ const getSessionToken = () => {
 const startApp = () => {
     getUserName(displayUserName)
     handleEmailSettings(displayEmailSettings)
+    handleProfileSettings(displayProfile)
 
 }
 
