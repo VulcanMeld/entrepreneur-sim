@@ -11,7 +11,7 @@ let MOCK_COMPANY_DATA = {
         
         {
             "companyName": faker.company.companyName(),
-            "companyType": "manufacturer",
+            "companyType": "store",
             "companyId": faker.random.uuid()
         },
 
