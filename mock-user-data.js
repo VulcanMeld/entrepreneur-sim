@@ -1,4 +1,5 @@
 const faker = require('faker')
+const MOCK_COMPANY_DATA = require('./mock-company-data')
 
 let MOCK_USER_INFO = {
     "userInfo": [
