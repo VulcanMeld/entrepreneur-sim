@@ -57,9 +57,31 @@ const handleEmailSettings = (callBackFn) => {
 }
 
 const displayEmailSettings = (data) => {
-    $('.js-email-section').append(`<p>Your email address is: ${data.emailAddress}</p>
-    <p>Send Message Notifications: ${data.sendMessageNotifications}</p>
-    <p>Send Transaction Notifications: ${data.sendTransactionNotifications}</p>`)
+    $('.js-email-section').append(`<p>Your email address is: ${data.emailAddress}<button>Change Email Address</button></p>
+    <p><input type = "checkbox" id = "message-notifications" name="message-notifications" checked><label for="message-notifications">
+    Send Message Notifications</label> </p>
+    <p><input type = "checkbox" id = "transaction-notifications" name="transaction-notifications" checked><label for = "transaction-notifications">
+    Send Transaction Notifications</label></p>`)
+
+    if(data.sendMessageNotifications == false){
+        $("#message-notifications").prop("checked", false)
+
+    }
+
+    if(data.sendMessageNotifications == true){
+        $("#message-notifications").prop("checked", true)
+        
+    }
+
+    if(data.sendTransactionNotifications == false){
+        $("#transaction-notifications").prop("checked", false)
+
+    }
+
+    if(data.sendTransactionNotifications == true){
+        $("#transaction-notifications").prop("checked", true)
+        
+    }
 
 
 }
