@@ -1,7 +1,7 @@
 const express = require('express')
-const shoppinhRouter = express.Router()
+const shoppingRouter = express.Router()
 
-loginRouter.get('/', (req,res) => {
+shoppingRouter.get('/', (req,res) => {
     res.sendFile( __dirname + "/public/" + "shopping.html" )
 })
 
