@@ -18,12 +18,12 @@ let MOCK_USER_INFO = {
                 },
 
                 {
-                    companyName: faker.company.companyName(),
+                    "companyName": faker.company.companyName(),
                     "companyType": "manufacturer"
                 },
 
                 {
-                    companyName: faker.company.companyName(),
+                    "companyName": faker.company.companyName(),
                     "companyType": "manufacturer"
                 }
             ],

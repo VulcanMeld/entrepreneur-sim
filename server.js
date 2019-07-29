@@ -1,10 +1,10 @@
 const express = require('express')
 const app = express()
-const loginRouter = require('./login')
-const accountRouter = require('./account')
-const companyRouter = require('./company')
-const inventoryRouter = require('./inventory')
-const shoppingRouter = require('./shopping')
+const loginRouter = require('./login-endpoints')
+const accountRouter = require('./account-endpoints')
+const companyRouter = require('./company-endpoints')
+const inventoryRouter = require('./inventory-endpoints')
+const shoppingRouter = require('./shopping-endpoints')
 
 app.use(express.static('public'))
 
